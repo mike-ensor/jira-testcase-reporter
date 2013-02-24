@@ -2,9 +2,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <artifactId>jira-testcase-reporter</artifactId>
-    <version>0.01</version>
     <name>${project.artifactId}</name>
     <description>Provides functionality to report TestCase results to Jira</description>
+    <version>0.01-SNAPSHOT</version>
 
     <parent>
         <groupId>com.clickconcepts.project</groupId>
@@ -32,8 +32,8 @@
         <connection>scm:git:ssh://${repository.domain}/${repository.user}/${repository.name}.git</connection>
         <url>https://${repository.domain}/${repository.user}/${repository.name}</url>
         <developerConnection>scm:git:ssh://${repository.domain}/${repository.user}/${repository.name}.git</developerConnection>
-      <tag>jira-testcase-reporter-0.01</tag>
-  </scm>
+        <tag>jira-testcase-reporter-0.01</tag>
+    </scm>
 
     <distributionManagement>
         <site>
@@ -63,7 +63,7 @@
     </developers>
 
     <properties>
-        <repository.domain>github.org</repository.domain>
+        <repository.domain>github.com</repository.domain>
         <repository.user>mike-ensor</repository.user>
         <repository.name>${project.artifactId}</repository.name>
         <!-- Parameters for Site Docs -->
@@ -74,7 +74,7 @@
 
         <!-- Override Site Documentation SCM publishing parameters  -->
         <scm-publish.scmBranch>master</scm-publish.scmBranch>
-        <scm-publish.pubScmUrl>scm:git:git@github.com:mike-ensor/${project.artifactId}.git</scm-publish.pubScmUrl>
+        <scm-publish.pubScmUrl>scm:git:git@${repository.domain}:${repository.user}/${project.artifactId}.git</scm-publish.pubScmUrl>
 
         <!-- Location of where "site" documentation is output -->
         <siteOutputDirectory>${project.build.directory}/site</siteOutputDirectory>
@@ -86,8 +86,8 @@
         <checkstyle.skip>true</checkstyle.skip>
         <pmd.skip>true</pmd.skip>
 
-        <changelog.fileUri>${changelog.bitbucket.fileUri}</changelog.fileUri>
-        <changelog.revision.fileUri>${changelog.revision.bitbucket.fileUri}</changelog.revision.fileUri>
+        <changelog.fileUri>${changelog.github.fileUri}</changelog.fileUri>
+        <changelog.revision.fileUri>${changelog.revision.github.fileUri}</changelog.revision.fileUri>
 
     </properties>
 
