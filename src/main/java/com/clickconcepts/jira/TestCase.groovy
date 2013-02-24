@@ -1,4 +1,4 @@
-package com.acquitygroup.jira
+package com.clickconcepts.jira
 
 import java.lang.annotation.ElementType
 import java.lang.annotation.Retention
