@@ -38,7 +38,7 @@
     <distributionManagement>
         <site>
             <id>site-docs</id>
-            <url>http://${repository.user}.${repository.domain}/${repository.name}</url>
+            <url>file://${env.HOME}/site-docs/${repository.name}</url>
         </site>
         <downloadUrl>${project.scm.url}</downloadUrl>
     </distributionManagement>
