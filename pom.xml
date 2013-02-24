@@ -4,7 +4,7 @@
     <artifactId>jira-testcase-reporter</artifactId>
     <name>${project.artifactId}</name>
     <description>Provides functionality to report TestCase results to Jira</description>
-    <version>0.01-SNAPSHOT</version>
+    <version>0.01</version>
 
     <parent>
         <groupId>com.clickconcepts.project</groupId>
