@@ -5,7 +5,7 @@
     <artifactId>jira-testcase-reporter</artifactId>
     <name>${project.artifactId}</name>
     <description>Provides functionality to report TestCase results to Jira</description>
-    <version>0.05</version>
+    <version>0.06-SNAPSHOT</version>
 
     <parent>
         <groupId>com.clickconcepts.project</groupId>
@@ -33,7 +33,7 @@
         <connection>scm:git:ssh://${repository.domain}/${repository.user}/${repository.name}.git</connection>
         <url>https://${repository.domain}/${repository.user}/${repository.name}</url>
         <developerConnection>scm:git:ssh://${repository.domain}/${repository.user}/${repository.name}.git</developerConnection>
-      <tag>jira-testcase-reporter-0.05</tag>
+      <tag>HEAD</tag>
   </scm>
 
     <distributionManagement>
